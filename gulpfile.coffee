@@ -22,7 +22,7 @@ gulp.task('serve', ['sass'], ->
 	gulp.watch('scss/*.scss', ['sass'])
 	gulp.watch('main.css', ['prefix'])
 	gulp.watch('index.html').on('change', browserSync.reload)
-	gulp.watch('script.js').on('change', browserSync.reload)
+	gulp.watch('js/index.js').on('change', browserSync.reload)
 	)
 
 gulp.task('prefix', ->
